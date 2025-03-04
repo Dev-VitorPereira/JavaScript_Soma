@@ -1,0 +1,65 @@
+
+        /* Centraliza o conteúdo no centro da tela */
+        body {
+            display: flex;
+            flex-direction: column; /* Organiza em coluna */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #76d4c7;
+        }
+
+        /* Centraliza o título */
+        #titulo {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Container dos inputs e botão */
+        #conteudo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px; /* Espaçamento entre os elementos */
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilo dos inputs */
+        input {
+            border-radius: 10px;
+            height: 30px;
+            width: 150px;
+            text-align: center;
+            border: 1px solid gray;
+        }
+
+        /* Botão estilizado */
+        #botao {
+            background-color: rgba(191, 246, 135, 0.9);
+            border-radius: 5px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s ease;
+        }
+
+        #botao:hover {
+            background-color: rgba(150, 230, 100, 1);
+        }
+
+        /* Resultado */
+        #res {
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
