@@ -4,33 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Somando Valores</title>
+   
+    <title>Calculando VALORES</title>
 </head>
 <body>
     <div id = 'titulo'>
-        <h1>SOMANDO VALORES</h1>
+        <h1>CALCULANDO VALORES</h1>
     </div>
 
     <div id = 'conteudo'>
-    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn1" id="txtn1"> 
+
+    <div id = 'operadores'>
+    <input type="radio" name="radoperador" id="soma" checked>
+    <label for="soma">+</label>
+
+    <input type="radio" name="radoperador" id="subtrair">
+    <label for="subtrair">-</label>
+
+    <input type="radio" name="radoperador" id="dividir">
+    <label for="dividir">/</label>
+
+    <input type="radio" name="radoperador" id="multiplicar">
+    <label for="multiplicar">x</label>
+    </div>
+
     <input type="number" name="txtn2" id="txtn2">
-    <input type="button" value="Somar" id="botao" onclick="somar()">
+    <input type="button" value="=" id="botao" onclick="calcular()">
     <div id = 'res'>
         resultado
     </div>
 </div>
-    <script>
-        function somar(){
-            var tx1 = window.document.getElementById('txtn1')
-            var tx2 = window.document.getElementById('txtn2')
-            var res = window.document.getElementById('res')
-            var n1 = Number(tx1.value)
-            var n2 = Number(tx2.value)
-            var soma = n1 + n2
-           res.innerHTML = `O resultado é ${soma}`
-        }
 
-    </script>
-
+ <script src="script.js"></script>
 </body>
 </html>

@@ -1,65 +1,99 @@
 
-        /* Centraliza o conteúdo no centro da tela */
-        body {
-            display: flex;
-            flex-direction: column; /* Organiza em coluna */
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #76d4c7;
-        }
+       /* Centraliza o conteúdo no centro da tela */
+body {
+    display: flex;
+    flex-direction: column; /* Organiza em coluna */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #76d4c7;
+}
 
-        /* Centraliza o título */
-        #titulo {
-            text-align: center;
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 20px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+/* Centraliza o título */
+#titulo {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-        /* Container dos inputs e botão */
-        #conteudo {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 10px; /* Espaçamento entre os elementos */
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        }
+/* Container dos inputs e botão */
+#conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Mais espaçamento */
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
 
-        /* Estilo dos inputs */
-        input {
-            border-radius: 10px;
-            height: 30px;
-            width: 150px;
-            text-align: center;
-            border: 1px solid gray;
-        }
+/* Estilizando os operadores */
+#operadores {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
 
-        /* Botão estilizado */
-        #botao {
-            background-color: rgba(191, 246, 135, 0.9);
-            border-radius: 5px;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-            transition: background 0.3s ease;
-        }
+/* Estilo dos inputs */
+input[type="number"] {
+    border-radius: 8px;
+    height: 35px;
+    width: 180px;
+    text-align: center;
+    border: 1px solid gray;
+    font-size: 16px;
+    padding: 5px;
+}
 
-        #botao:hover {
-            background-color: rgba(150, 230, 100, 1);
-        }
+/* Estilizando os botões de rádio */
+input[type="radio"] {
+    display: none; /* Esconde o rádio padrão */
+}
 
-        /* Resultado */
-        #res {
-            margin-top: 15px;
-            font-size: 18px;
-            font-weight: bold;
-        }
+label {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 25px;
+    padding: 6px 14px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    color: #007BFF;
+    transition: 0.3s;
+}
+
+/* Quando o rádio está selecionado */
+input[type="radio"]:checked + label {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Botão estilizado */
+#botao {
+    background-color: rgba(191, 246, 135, 0.9);
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Efeito ao passar o mouse */
+#botao:hover {
+    background-color: rgba(150, 230, 100, 1);
+    transform: scale(1.05);
+}
+
+/* Resultado */
+#res {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
